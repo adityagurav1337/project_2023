@@ -1,0 +1,44 @@
+ <app-header></app-header>
+ 
+ <br><br>
+
+
+
+<br><br>
+<div class="row">
+
+  <div class="col-sm-3"></div>
+
+  <div class="col-sm-8">
+    <div class="container">
+        <div class="row">
+          
+          <table id="example" class="table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+              <tr>
+                <TH>ID</TH>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>MOBILENO</th>
+                <th>PASSWORD</th>
+                <th>CITY</th>
+                <th>AGE</th>
+              </tr>
+            </thead>
+      
+            <tbody>
+                <tr *ngFor="let data of result; let i = index">
+                    <td class="text-right">{{ i + 1}}</td>
+                    <td class="text-right">{{ data.name }}</td>
+                    <td class="text-right">{{ data.email}}</td>
+                    <td class="text-right">{{ data.mobileno}}</td>
+                    <td class="text-right">{{ data.password}}</td>
+                    <td class="text-right">{{ data.city}}</td>
+                    <td class="text-right">{{ data.age}}</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
